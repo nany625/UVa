@@ -73,7 +73,7 @@ bool spfa(int n) {
                     q.push(v);
                     inQueue[v] = 1;
                     ++cnt[v];
-                    if(cnt[v] > n)
+                    if(cnt[v] == n)
                         return true;
                 }
             }
